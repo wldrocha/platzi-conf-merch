@@ -7,9 +7,7 @@ const Success = () => {
         <h2>Fulano, gracias por tu compra</h2>
         <span>Tu pedido llegará muy pronto a la dirección que solicitaste</span>
       </section>
-      <section className="Success-map">
-        Aqui pondre un mapita :)
-      </section>
+      <section className="Success-map">Aqui pondre un mapita :)</section>
     </div>
   )
 }

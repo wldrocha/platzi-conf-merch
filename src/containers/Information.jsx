@@ -1,7 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../styles/components/Information.css'
 
 const Information = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="information">
       <div className="Information-content">
@@ -11,11 +14,26 @@ const Information = () => {
         <div className="Information-form">
           <form>
             <label htmlFor="name">Nombre completo</label>
-            <input type="text" name="name" id="name" placeholder="Nombre completo" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre completo"
+            />
             <label htmlFor="email">Correo electronico</label>
-            <input type="text" name="email" id="email" placeholder="Correo electronico" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Correo electronico"
+            />
             <label htmlFor="address">Direccion</label>
-            <input type="text" name="address" id="address" placeholder="Direccion" />
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Direccion"
+            />
             <label htmlFor="apt">Apto</label>
             <input type="text" name="apt" id="apt" placeholder="Apto" />
             <label htmlFor="city">Ciudad</label>
@@ -31,8 +49,16 @@ const Information = () => {
           </form>
         </div>
         <div className="Information-buttons">
-          <button type="button" className="Information-back">Regresar</button>
-          <button type="button" className="Information-back">pagar</button>
+          <button type="button" className="Information-back">
+            Regresar
+          </button>
+          <button
+            type="button"
+            className="Information-back"
+            onClick={() => navigate(`/checkout/payment`)}
+          >
+            pagar
+          </button>
         </div>
       </div>
       <aside className="Information-sidebar">
