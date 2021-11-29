@@ -5,7 +5,7 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": ["airbnb", "prettier", "react", "react-hooks", "prettier", "import"],
+  "extends": ["airbnb", "react", "react-hooks", "prettier", "import"],
   "plugins": ["prettier"],
   "rules": {
     "react/jsx-filename-extension": [
