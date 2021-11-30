@@ -1,61 +1,28 @@
 {
-  "root": true,
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es2021": true
-  },
-  "extends": ["airbnb", "react", "react-hooks", "prettier", "import"],
-  "plugins": ["prettier"],
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx"]
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     ],
-    "react/prop-types": "off",
+    "react/prop-types": 0,
     "no-underscore-dangle": 0,
-    "react/jsx-props-no-spreading": "off",
-    "import/imports-first": ["error", "absolute-first"],
-    "import/newline-after-import": "error",
-    "no-console": "warn",
-    "no-alert": "error",
-    "no-param-reassign": "off",
-    "no-useless-concat": "warn",
-    "no-unused-vars": "error",
-    "comma-dangle": "off",
-    "quotes": ["error", "single"],
-    "semi": ["error", "never"],
-    "camelcase": [
-      2,
-      {
-        "properties": "always"
-      }
-    ],
-    "no-var": 2,
-    "prefer-const": [
+    "import/imports-first": [
       "error",
-      {
-        "destructuring": "all",
-        "ignoreReadBeforeAssign": false
-      }
+      "absolute-first"
     ],
-    "linebreak-style": ["warn", "unix"],
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "parent", "sibling", "index"],
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["builtin"]
-      }
-    ]
+    "import/newline-after-import": "error"
   },
   "globals": {
     "window": true,
