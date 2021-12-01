@@ -10,7 +10,7 @@ const Products = () => {
   } = useContext(AppContext)
 
   const handleAddToCart = product => () => {
-    addToCart(product);
+    addToCart(product)
   }
   return (
     <div className="Products">
